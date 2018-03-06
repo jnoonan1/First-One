@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            body {
+    background-image: url("http://www.template-joomspirit.com/template-joomla/template-94/images/pattern/cloud-1.jpg");
+}
+                        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+        </style>
+                
+                
+                
+                
+                
+                        <body>
+                        <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#cv_page1.html">CV</a></li>
+  <li><a href="#eBusiness1.html">eBusiness</a></li>
+  <li><a href="#sports.html">Interests</a></li>
+</ul>
+
+<h1 class="mainheading">Enter Payment Details </h1>
+
+          <form action="Ebus3.php" method="POST">
+              
+                    <label for="jack">Name</label>
+                    
+                    <input type="password" id="jack" placeholder="Jack Maher" maxlength="20">
+                <br/>
+                <br/>
+                    <label for="jackmaher">Email</label>
+                    
+                    <input type="password" id="jackmaher" placeholder="jackmaher@inlook.com" maxlength="25">
+                <br/>
+                <br/>
+                    <label for="user_pin">PIN</label>
+                    
+                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="16">
+
+               
+                <a href="eBusiness3.html"class="button">Proceed with Purchase</a>
+              
+            </form>
+            
+            <br/>
+            <button onClick="validateDetails()">Validate</button>
+            
+            <?php
+            // Set session variables
+            $_SESSION["total"] = $_POST["total"];
+            ?>
+
+
+
+</body>
+
+
