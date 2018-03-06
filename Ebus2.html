@@ -1,7 +1,11 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
+               <style>
             
             body {
     background-image: url("http://www.template-joomspirit.com/template-joomla/template-94/images/pattern/cloud-1.jpg");
@@ -33,40 +37,43 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
-        </style>
-                
-                
-                
-                
-                
-                        <body>
-                        <ul>
+        
+</style>  
+        <title>Enter Details</title>
+        
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="ebus2_validator.js"></script>
+    </head>
+    <body>
+        
+                               <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#cv_page1.html">CV</a></li>
-  <li><a href="#eBusiness1.html">eBusiness</a></li>
+  <li><a href="#Ebus1.html">eBusiness</a></li>
   <li><a href="#sports.html">Interests</a></li>
 </ul>
-
-<h1 class="mainheading">Enter Payment Details </h1>
-
-          <form action="Ebus3.php" method="POST">
-              
+        
+        <h1>Please enter your payment details</h1>
+        
+        
+            <form action="Ebus3.html" method="POST">
+                
                     <label for="jack">Name</label>
                     
-                    <input type="password" id="jack" placeholder="Jack Maher" maxlength="20">
-                <br/>
-                <br/>
-                    <label for="jackmaher">Email</label>
+                    <input type="text" id="jack" placeholder="Jack Maher" maxlength="20">
+                <br/><br/>
+                                 <label for="jackmaher">Email</label>
                     
-                    <input type="password" id="jackmaher" placeholder="jackmaher@inlook.com" maxlength="25">
-                <br/>
-                <br/>
+                    <input type="text" id="jackmaher" placeholder="jackmaher@inlook.com" maxlength="25">
+                    
+                    <br/><br/>
+
                     <label for="user_pin">PIN</label>
                     
-                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="16">
+                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
 
-               
-                <a href="eBusiness3.html"class="button">Proceed with Purchase</a>
+                <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
               
             </form>
             
@@ -77,9 +84,8 @@ li a:hover:not(.active) {
             // Set session variables
             $_SESSION["total"] = $_POST["total"];
             ?>
-
-
-
-</body>
+        
+    </body>
+</html>
 
 

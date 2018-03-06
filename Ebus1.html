@@ -52,7 +52,7 @@ li a:hover:not(.active) {
                                 <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#cv_page1.html">CV</a></li>
-  <li><a href="#eBusiness1.html">eBusiness</a></li>
+  <li><a href="#Ebus1.html">eBusiness</a></li>
   <li><a href="#sports.html">Interests</a></li>
 </ul>
 
@@ -134,55 +134,14 @@ li a:hover:not(.active) {
             
             <br/>
             <button onClick="calcSub()">Calculate Cost</button><br/><br/>
-            <a role="button" href="Ebus1.php">Clear Choice</a>
+            <a role="button" href="Ebus1.html">Clear Choice</a>
             
-            <script type = "text/javascript">
-            /* global $ */
-
-function calcSub(){
-    
-    var argSubTotal;
-    
-    if(document.getElementById('salesforce').checked) {
-      argSubTotal = 100;
-    }
-     if(document.getElementById('aws').checked) {
-      argSubTotal = 150;
-    }
-     if(document.getElementById('nile').checked) {
-      argSubTotal = 88;
-    }
-     if(document.getElementById('star').checked) {
-      argSubTotal = 200;
-    }
-    
-    
-    
-    
-    display(argSubTotal);
-}
-
-function display(parm1){
-  
-  document.getElementById("subtotal").value = parm1;
-  document.getElementById("total").value = parm1;
         
-  enablebtnProceed();
-}
 
-
-function enablebtnProceed(){
-    $('#btnProceed').prop('disabled', false);
-}
-
-function disablebtnProceed() {
-    $('#btnProceed').prop('disabled', true);
-}
-</script>
 
 
 <br/>
-<a href="eBusiness2.html" class="btn btn-dark">Next</a>
+       <a href="Ebus2.html" class="btn btn-dark">Next</a>
  
     
     </body>
