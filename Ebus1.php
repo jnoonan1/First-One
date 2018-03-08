@@ -17,15 +17,15 @@
             
             <form method="POST" action="Ebus2.html">
               
-              <label for="salesforce">
-                <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
+              <label for="MovieCenter">
+                <input type="radio" id="MovieCenter" name="product" checked onClick="disablebtnProceed()"/>
                 SalesForce @ $100
               </label>
               
               <br/>
               
-              <label for="aws">
-                <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
+              <label for="InlookMail">
+                <input type="radio" id="InlookMail" name="product" onClick="disablebtnProceed()"/>
                 AWS @ $300
               </label>
               

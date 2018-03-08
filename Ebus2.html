@@ -37,6 +37,7 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
+
         
 </style>  
         <title>Enter Details</title>
@@ -48,16 +49,16 @@ li a:hover:not(.active) {
     <body>
         
                                <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#cv_page1.html">CV</a></li>
-  <li><a href="#Ebus1.html">eBusiness</a></li>
-  <li><a href="#sports.html">Interests</a></li>
+  <li><a class="active" href="homepage.html">Home</a></li>
+  <li><a href="cv_page1.html">CV</a></li>
+  <li><a href="Ebus1.html">eBusiness</a></li>
+  <li><a href="sports.html">Interests</a></li>
 </ul>
         
         <h1>Please enter your payment details</h1>
         
         
-            <form action="Ebus3.html" method="POST">
+            <form action="Ebus3.php" method="POST">
                 
                     <label for="jack">Name</label>
                     
@@ -74,8 +75,9 @@ li a:hover:not(.active) {
                     <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
 
                 <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+                 <a href="Ebus3.html" class="btn btn-dark">Proceed to Purchase</a>
                 
-               <a href="Ebus3.html" class="btn btn-dark">Proceed</a>
+               
               
             </form>
             
